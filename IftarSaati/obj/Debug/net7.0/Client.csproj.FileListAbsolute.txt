@@ -1,0 +1,6 @@
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\IftarSaati\obj\Debug\net7.0\Client.csproj.AssemblyReference.cache
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\IftarSaati\obj\Debug\net7.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\IftarSaati\obj\Debug\net7.0\Client.AssemblyInfoInputs.cache
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\IftarSaati\obj\Debug\net7.0\Client.AssemblyInfo.cs
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\IftarSaati\obj\Debug\net7.0\Client.csproj.CoreCompileInputs.cache
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\IftarSaati\obj\Debug\net7.0\Client.MvcApplicationPartsAssemblyInfo.cache

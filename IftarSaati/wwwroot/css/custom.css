@@ -1,0 +1,19 @@
+﻿body {
+    background-color: #EEEEEE;
+}
+
+.custom-card {
+    background-color: #FFB26B;
+    box-shadow: 10px 10px black;
+    border-radius: 5px;
+    font-family: 'Itim', cursive;
+}
+
+h1{
+    font-size:3rem;
+}
+
+p{
+    font-size:1.3rem;
+}
+/*#FF6E31;*/

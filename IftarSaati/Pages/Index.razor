@@ -1,0 +1,94 @@
+﻿@page "/"
+@using DataProvider.Dtos;
+@using Newtonsoft.Json;
+@using System.Text;
+@using System.Globalization;
+@inject HttpClient HttpClient;
+
+
+
+
+<PageTitle>İftar Saati</PageTitle>
+
+<div class="custom-card w-50 m-auto mt-5 p-3">
+    <h1 class="mb-5">🕌İftar Saati Sorgulama🕌</h1>
+
+    <p>Türkiyenin her yerinden iftar saatlerine ulaşmak için bir tık uzaktasınız 😊</p>
+
+    <input type="text" @bind="city" class="form-control form-control-lg w-75 d-inline-block mb-5 border-3 border-dark " placeholder="Şehir giriniz" />
+    <button type="button" class="btn btn-dark btn-lg" @onclick="@(() => fontFixer(city))">Sorgula</button>
+
+    <h1>@_city için iftar saati @time </h1>
+</div>
+
+
+
+
+
+@code{
+
+    private List<Root> storageForDatas = new List<Root>();
+    
+    private string? time = "";
+    private string city="istanbul";
+    private string _city="İstanbul";
+    
+    protected override async Task OnInitializedAsync()
+    {
+        await PostCity(city);
+
+        await base.OnInitializedAsync();
+    }
+
+    private async Task GetTime()
+    {
+        
+        storageForDatas= await HttpClient.GetFromJsonAsync<List<Root>>("http://localhost:5219/IftarSaati");
+        await Time();
+
+    }
+
+    private async Task Time()
+    {
+        time = storageForDatas[storageForDatas.Count-1].result[0].time;
+        fontReformer();
+
+
+    }
+
+    private async Task PostCity(string city)
+    {
+
+        var response = await HttpClient.PostAsJsonAsync($"http://localhost:5219/IftarSaati?city={city}",city);
+        
+        await GetTime();
+
+    }
+
+    private async Task fontFixer(string text)
+    {
+       
+        text = text.ToLower();
+        var unaccentedText =String.Join("", text.Normalize(NormalizationForm.FormD)
+                .Where(c => char.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)).Replace("ı","i").Replace("ü","u");
+
+        text = unaccentedText;
+        
+        await PostCity(text);
+        
+    }
+
+    private string fontReformer()
+    {
+        if (city.Length > 0)
+        {
+            _city = city;
+            _city = char.ToUpper(_city[0]) + _city.Substring(1);
+            return _city;
+        }
+        else
+            return _city;
+
+    }
+
+}

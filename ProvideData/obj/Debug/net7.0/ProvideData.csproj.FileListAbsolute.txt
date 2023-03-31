@@ -1,0 +1,12 @@
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\bin\Debug\net7.0\ProvideData.deps.json
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\bin\Debug\net7.0\ProvideData.dll
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\bin\Debug\net7.0\ProvideData.pdb
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\obj\Debug\net7.0\ProvideData.csproj.AssemblyReference.cache
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\obj\Debug\net7.0\ProvideData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\obj\Debug\net7.0\ProvideData.AssemblyInfoInputs.cache
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\obj\Debug\net7.0\ProvideData.AssemblyInfo.cs
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\obj\Debug\net7.0\ProvideData.csproj.CoreCompileInputs.cache
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\obj\Debug\net7.0\ProvideData.dll
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\obj\Debug\net7.0\refint\ProvideData.dll
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\obj\Debug\net7.0\ProvideData.pdb
+C:\Users\DL_ne\OneDrive\Masaüstü\IftarSaati\ProvideData\obj\Debug\net7.0\ref\ProvideData.dll
